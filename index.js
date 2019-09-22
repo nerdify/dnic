@@ -6,3 +6,11 @@ export const dnic = dni => {
 
 	return regExp.test(dni);
 };
+
+export const dnicWithDateValidation = dni => {
+	console.log('dni: ', dni);
+
+	if(!dni) {
+		return;
+	}
+}
