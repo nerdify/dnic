@@ -1,14 +1,14 @@
 {
   "name": "dnic",
   "version": "1.0.0",
-  "description": "DNI validator",
+  "description": "ID Nicaraguan validator",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nerdify/DNic-js.git"
+    "url": "git+https://github.com/nerdify/Dnic.git"
   },
   "keywords": [
     "dni",
@@ -19,7 +19,11 @@
   "author": "Gustavo Chavarria",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nerdify/DNic-js/issues"
+    "url": "https://github.com/nerdify/Dnic/issues"
   },
-  "homepage": "https://github.com/nerdify/DNic-js#readme"
+  "homepage": "https://github.com/nerdify/Dnic#readme",
+  "devDependencies": {
+    "eslint": "^6.4.0",
+    "eslint-plugin-import": "^2.18.2"
+  }
 }
