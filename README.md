@@ -1,4 +1,4 @@
-# Dnic JS
+# Dnic
 Validador de Numero de Documento Nacional de Identidad (DNI/Cedula) Nicaraguense.
 
 
