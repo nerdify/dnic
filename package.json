@@ -1,0 +1,25 @@
+{
+  "name": "dnic",
+  "version": "1.0.0",
+  "description": "DNI validator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nerdify/DNic-js.git"
+  },
+  "keywords": [
+    "dni",
+    "nicaraguan",
+    "nica",
+    "validator"
+  ],
+  "author": "Gustavo Chavarria",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nerdify/DNic-js/issues"
+  },
+  "homepage": "https://github.com/nerdify/DNic-js#readme"
+}
