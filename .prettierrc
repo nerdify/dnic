@@ -1,6 +1,5 @@
 {
   "singleQuote": true,
   "bracketSpacing": false,
-  "parser": "babel",
-  "semi": false
+  "parser": "babel"
 }
