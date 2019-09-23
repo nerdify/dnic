@@ -7,10 +7,10 @@
   "module": "dist/index.es.js",
   "source": "src/index.js",
   "scripts": {
-		"build": "microbundle",
-		"test": "xo",
-		"prepare": "npm run build",
-		"release": "np"
+    "build": "microbundle",
+    "test": "xo",
+    "prepare": "npm run build",
+    "release": "np"
   },
   "repository": {
     "type": "git",
@@ -35,10 +35,10 @@
     "np": "5.1.0",
     "xo": "0.24.0"
   },
-	"publishConfig": {
-		"access": "public"
-	},
-	"xo": {
-		"prettier": true
-	}
+  "publishConfig": {
+    "access": "public"
+  },
+  "xo": {
+    "prettier": true
+  }
 }
