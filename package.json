@@ -8,7 +8,7 @@
   "source": "src/index.js",
   "scripts": {
     "build": "microbundle",
-    "test": "xo",
+    "test": "xo && ava",
     "prepare": "npm run build",
     "release": "np"
   },
@@ -33,7 +33,7 @@
     "ava": "2.4.0",
     "microbundle": "0.11.0",
     "np": "5.1.0",
-    "xo": "0.24.0"
+    "xo": "0.25.3"
   },
   "publishConfig": {
     "access": "public"
