@@ -38,6 +38,11 @@
   "publishConfig": {
     "access": "public"
   },
+  "ava": {
+    "require": [
+      "esm"
+    ]
+  },
   "xo": {
     "prettier": true,
     "space": true
