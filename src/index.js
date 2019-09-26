@@ -1,11 +1,15 @@
 export const dnic = dni => {
+	if(!dni){
+		return false;
+	}
+
 	const regex = /([0-6][d]{2})-([0-2][d]|3[0-1])(0[1-9]|1[0-2])([d]{2})-([d]{4}[A-X])/;
 
 	return regex.test(dni);
 };
 
 export const dnicWithDateValidation = dni => {
-	if (!dni || !dnic(dni)) {
+	if (!dnic(dni)) {
 		return false;
 	}
 
@@ -19,3 +23,24 @@ export const dnicWithDateValidation = dni => {
 	
 	return !!newDate;
 };
+
+
+export const getRegionByDni = dni => {
+	if (!dnic(dni)) {
+		return false;
+	}
+
+	const region = dni.split('-')[0];
+
+	const mapRegions = [
+		{'001' : 'Managua'},
+		{'002' : 'San Rafael Del Sur'},
+		{'003' : 'Tipitapa'},
+		{'004' : 'Villa Carlos Fonseca'},
+		{'005' : 'San Francisco Libre'}
+	];
+
+	const foundRegion =  mapRegions.find(r => r[region]);
+
+	return Object.values(foundRegion)[0];
+}
