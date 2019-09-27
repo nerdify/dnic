@@ -1,3 +1,5 @@
+import {municipalities} from './municipalities';
+
 const dnic = dni => {
   if (!dni) {
     return false;
@@ -8,15 +10,18 @@ const dnic = dni => {
   return regex.test(dni);
 };
 
-export default dnic;
+export {dnic as default};
 
+/**
+ *
+ * @param {*} dni
+ */
 export const dnicWithDateValidation = dni => {
   if (!dnic(dni)) {
     return false;
   }
 
   const date = dni.split('-')[1];
-
   const day = date.slice(0, 2);
   const month = date.slice(2, 4);
   const year = date.slice(4, 6);
@@ -26,22 +31,17 @@ export const dnicWithDateValidation = dni => {
   return Boolean(newDate);
 };
 
-export const getRegionByDni = dni => {
+/**
+ * Get the regions from dni
+ * @param {*} dni
+ */
+export const getRegionFromDni = dni => {
   if (!dnic(dni)) {
     return false;
   }
 
   const region = dni.split('-')[0];
+  const foundRegion = municipalities.find(r => r[region]);
 
-  const mapRegions = [
-    {'001': 'Managua'},
-    {'002': 'San Rafael Del Sur'},
-    {'003': 'Tipitapa'},
-    {'004': 'Villa Carlos Fonseca'},
-    {'005': 'San Francisco Libre'}
-  ];
-
-  const foundRegion = mapRegions.find(r => r[region]);
-
-  return Object.values(foundRegion)[0];
+  return foundRegion[region];
 };

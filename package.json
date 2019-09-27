@@ -10,7 +10,8 @@
     "build": "microbundle",
     "test": "xo && ava",
     "prepare": "npm run build",
-    "release": "np"
+    "release": "np",
+    "lint": "eslint"
   },
   "repository": {
     "type": "git",
@@ -33,6 +34,7 @@
     "ava": "2.4.0",
     "microbundle": "0.11.0",
     "np": "5.1.0",
+    "prettier": "1.18.2",
     "xo": "0.25.3"
   },
   "publishConfig": {
