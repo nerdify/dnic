@@ -1,4 +1,5 @@
 import {municipalities} from './municipalities';
+import {validateDate} from './utils';
 
 const dnic = dni => {
   if (!dni) {
@@ -26,9 +27,7 @@ export const dnicWithDateValidation = dni => {
   const month = date.slice(2, 4);
   const year = date.slice(4, 6);
 
-  const newDate = new Date(year, month - 1, day);
-
-  return Boolean(newDate);
+  return validateDate(day, month, year);
 };
 
 /**
