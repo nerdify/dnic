@@ -12,7 +12,11 @@ const leon = [{'281': 'Leon'}];
 const chinandega = [
   {'081': 'Chinandega'},
   {'082': 'Corinto'},
-  {'083': 'El Realejo'}
+  {'083': 'El Realejo'},
+  {'084': 'Chichigalpa'},
+  {'085': 'Posoltega'},
+  {'086': 'El Viejo'},
+  {'087': 'Puerto Morazán'}
 ];
 
 export const municipalities = [...managua, ...leon, ...chinandega];
