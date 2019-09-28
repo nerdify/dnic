@@ -9,4 +9,10 @@ const managua = [
 
 const leon = [{'281': 'Leon'}];
 
-export const municipalities = [...managua, ...leon];
+const chinandega = [
+  {'081': 'Chinandega'},
+  {'082': 'Corinto'},
+  {'083': 'El Realejo'}
+];
+
+export const municipalities = [...managua, ...leon, ...chinandega];
