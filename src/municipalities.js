@@ -15,4 +15,22 @@ const chinandega = [
   {'083': 'El Realejo'}
 ];
 
-export const municipalities = [...managua, ...leon, ...chinandega];
+const chontales = [
+  {'121': 'Juigalpa'},
+  {'122': 'Acoyapa'},
+  {'123': 'Santo Tomás'},
+  {'124': 'Villa Sandino'},
+  {'125': 'San Pedro de Lóvago'},
+  {'126': 'La Libertad'},
+  {'127': 'Santo Domingo'},
+  {'128': 'Comalapa'},
+  {'129': 'San Francisco Cuapa'},
+  {'130': 'El Coral'}
+];
+
+export const municipalities = [
+  ...managua,
+  ...leon,
+  ...chinandega,
+  ...chontales
+];
