@@ -5,11 +5,14 @@ import dnic, {dnicWithDateValidation} from '../src';
 const VALID_DNI = '001-280592-0025N';
 const INVALID_DATE = '001-310292-0000N';
 
-test('shoud pass a valid dni', t => {
+test('should pass a valid dni', t => {
   t.true(dnic(VALID_DNI));
 });
 
-test('validate date', t => {
+test('valid dni (date)', t => {
   t.true(dnicWithDateValidation(VALID_DNI));
+});
+
+test('valid a wrong date', t => {
   t.false(dnicWithDateValidation(INVALID_DATE));
 });
