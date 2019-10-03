@@ -56,7 +56,18 @@ const managua = [
   {'006': 'Mateare'}
 ];
 
-const leon = [{'281': 'Leon'}];
+const leon = [
+  {'281': 'Leon'},
+  {'283': 'El Jicaral'},
+  {'284': 'La Paz Centro'},
+  {'285': 'Santa Rosa Del Peñón'},
+  {'286': 'Quetzalguaque'},
+  {'287': 'Nagarote'},
+  {'288': 'El Sauce'},
+  {'289': 'Achuapa'},
+  {'290': 'Telica'},
+  {'291': 'Larreynaga Malpaisillo'}
+];
 
 export const municipalities = [
   ...boaco,
