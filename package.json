@@ -1,5 +1,5 @@
 {
-  "name": "@nerdify/dnic",
+  "name": "dnic",
   "version": "0.0.1",
   "description": "ID Nicaraguan validator",
   "main": "dist/index.js",
