@@ -1,6 +1,6 @@
 {
-  "name": "dnic",
-  "version": "0.0.1",
+  "name": "@nerdify/dnic",
+  "version": "0.1.0",
   "description": "ID Nicaraguan validator",
   "main": "dist/index.js",
   "umd:main": "dist/index.umd.js",
