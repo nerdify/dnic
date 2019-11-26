@@ -1,6 +1,6 @@
 import test from 'ava';
 
-import dnic, {validate, validateDate} from '../src';
+import dnic, {validate, validateDate, getMunicipalities} from '../src';
 
 const VALID_DNI = '001-280592-0025N';
 const INVALID_DATE = '001-310292-0000N';
@@ -19,4 +19,8 @@ test('valid dni (date)', t => {
 
 test('valid a wrong date', t => {
   t.false(validateDate(INVALID_DATE));
+});
+
+test('valid municipalities (managua)', t => {
+  t.is(getMunicipalities(VALID_DNI), 'Managua');
 });

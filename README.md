@@ -14,4 +14,12 @@ Esctructura del DNI:
 
 ## Uso
 
-import dnic from '@nerdify/dnic'
+import dnic, {validate, validateDate, getMunicipalities} from '@nerdify/dnic'
+
+const dni = '281-140891-0022V';
+
+dnic.isValid(dni); // true
+
+validate(dni); // true
+
+getMunicipalities(dni); // Leon
