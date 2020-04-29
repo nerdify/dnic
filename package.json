@@ -1,13 +1,13 @@
 {
-  "name": "dnic",
-  "version": "0.0.1",
+  "name": "@nerdify/dnic",
+  "version": "0.2.0",
   "description": "ID Nicaraguan validator",
   "main": "dist/index.js",
   "umd:main": "dist/index.umd.js",
   "module": "dist/index.es.js",
   "source": "src/index.js",
   "scripts": {
-    "build": "microbundle",
+    "build": "xo && ava && microbundle",
     "test": "xo && ava",
     "prepare": "npm run build",
     "release": "np"
@@ -31,7 +31,7 @@
   "homepage": "https://github.com/nerdify/dnic#readme",
   "devDependencies": {
     "ava": "2.4.0",
-    "microbundle": "0.11.0",
+    "microbundle": "0.12.0-next.6",
     "np": "5.1.0",
     "xo": "0.25.3"
   },

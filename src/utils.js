@@ -1,4 +1,4 @@
-export const validateDate = (day, month, year) => {
+export const isValidDate = (day, month, year) => {
   const pDay = parseInt(day, 10);
   const pMonth = parseInt(month, 10);
   const pYear = parseInt(year, 10);

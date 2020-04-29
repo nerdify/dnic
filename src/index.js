@@ -1,7 +1,12 @@
 import {municipalities} from './municipalities';
-import {validateDate} from './utils';
+import {isValidDate} from './utils';
 
-const dnic = dni => {
+/**
+ * Basic Dni Validation
+ *
+ * @param {*} dni
+ */
+export const validate = dni => {
   if (!dni) {
     return false;
   }
@@ -11,14 +16,12 @@ const dnic = dni => {
   return regex.test(dni);
 };
 
-export {dnic as default};
-
 /**
- *
+ * Dni Validation with date validation
  * @param {*} dni
  */
-export const dnicWithDateValidation = dni => {
-  if (!dnic(dni)) {
+export const validateDate = dni => {
+  if (!validate(dni)) {
     return false;
   }
 
@@ -27,15 +30,16 @@ export const dnicWithDateValidation = dni => {
   const month = date.slice(2, 4);
   const year = date.slice(4, 6);
 
-  return validateDate(day, month, year);
+  return isValidDate(day, month, year);
 };
 
 /**
  * Get the regions from dni
+ *
  * @param {*} dni
  */
-export const getRegionFromDni = dni => {
-  if (!dnic(dni)) {
+export const getMunicipalities = dni => {
+  if (!validate(dni)) {
     return false;
   }
 
@@ -44,3 +48,14 @@ export const getRegionFromDni = dni => {
 
   return foundRegion[region];
 };
+
+/**
+ * Export default.
+ */
+
+const exportDefault = {
+  isValid: dni => validate(dni),
+  isValidDate: dni => validateDate(dni)
+};
+
+export {exportDefault as default};

@@ -1,6 +1,8 @@
 # Dnic - Javascript
+
 Validador de Número de Documento Nacional de Identidad (DNI/Cédula) Nicaragüense.
 
+Validador de Numero de Documento Nacional de Identidad (DNI/Cedula) Nicaragüense.
 
 Esctructura del DNI:
 
@@ -12,3 +14,14 @@ Esctructura del DNI:
 
 <img src="https://i.ibb.co/YX8Tk1n/descarga.jpg" />
 
+## Uso
+
+import dnic, {validate, validateDate, getMunicipalities} from '@nerdify/dnic'
+
+const dni = '281-140891-0022V';
+
+dnic.isValid(dni); // true
+
+validate(dni); // true
+
+getMunicipalities(dni); // Leon
